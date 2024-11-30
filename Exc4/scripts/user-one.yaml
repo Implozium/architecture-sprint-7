@@ -1,0 +1,10 @@
+apiVersion: certificates.k8s.io/v1
+kind: CertificateSigningRequest
+metadata:
+  name: user-one
+spec:
+  request: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURSBSRVFVRVNULS0tLS0KTUlHaU1GWUNBUUF3SXpFU01CQUdBMVVFQXd3SmRYTmxjaTF2Ym1Vc01RMHdDd1lEVlFRS0RBUmxaR2wwTUNvdwpCUVlESzJWd0F5RUFYczhONDNNMy95aENnczhEeGNGS045RXBNL2VHSGtmNmlWa3VJY3FEaWJXZ0FEQUZCZ01yClpYQURRUUNyWlVvcDhyd3UzMlNRMHNCMlNlQXluWHNhRmFMalEzZU5WdUcxZ1Z0aTBpR1hDcWkxUmZsaDkwTmIKaXNFSWowd0s0UEkzUG9IdFAxZjRBR0srZ244TgotLS0tLUVORCBDRVJUSUZJQ0FURSBSRVFVRVNULS0tLS0K
+  signerName: kubernetes.io/kube-apiserver-client
+  expirationSeconds: 86400
+  usages:
+  - client auth

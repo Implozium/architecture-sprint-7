@@ -1,0 +1,10 @@
+apiVersion: certificates.k8s.io/v1
+kind: CertificateSigningRequest
+metadata:
+  name: user-second
+spec:
+  request: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURSBSRVFVRVNULS0tLS0KTUlHbE1Ga0NBUUF3SmpFVk1CTUdBMVVFQXd3TWRYTmxjaTF6WldOdmJtUXNNUTB3Q3dZRFZRUUtEQVJsWkdsMApNQ293QlFZREsyVndBeUVBd3VVRExFbVBkUUwwTlFZWklSelNtcnZkY1lGYmIwcEcvRFFIcFVHUkJxV2dBREFGCkJnTXJaWEFEUVFCbjlTTFJDSGkxQi9TZ1NOZjF3MnY2cDZ5ckR6VExkSm5jZHpWc0ZaMHZVSmc0MEZTRTBjZ2sKNGJZWjFobzdOQ2Fyc3FjTzF0UUNWRzdoakprZ2J6RUIKLS0tLS1FTkQgQ0VSVElGSUNBVEUgUkVRVUVTVC0tLS0tCg==
+  signerName: kubernetes.io/kube-apiserver-client
+  expirationSeconds: 86400
+  usages:
+  - client auth
